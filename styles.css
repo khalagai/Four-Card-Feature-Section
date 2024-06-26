@@ -1,0 +1,110 @@
+/* Mobile first */
+
+.attribution { font-size: 11px; text-align: center; }
+.attribution a { color: hsl(228, 45%, 44%); }
+.card {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding-top: 30px;
+    padding-bottom: 30px;   
+    background-color: hsl(0, 0%, 98%);
+}
+.container {
+    display: grid;
+    grid-template-columns: 200px;
+    grid-template-rows: repeat(5, 150x);
+    gap: 15px;
+    color: hsl(229, 6%, 66%);
+    background-color: hsl(0, 0%, 98%);
+    font-size: 7px;
+    font-family: Poppins;
+}
+.heading {
+    grid-row: span ;
+    background-color: hsl(0, 0%, 98%);
+    padding-left: 10px;
+    padding-right: 10px;    
+}
+svg {
+    transform: translate(130px, 10px);    
+}
+.supervisor {
+    border-top:2px solid hsl(180, 62%, 55%);
+    background-color: white;
+}
+.team-builder {
+    border-top:2px solid hsl(0, 78%, 62%);
+    background-color: white;
+}
+.karma {
+    border-top:2px solid hsl(34, 97%, 64%);
+    background-color: white;
+}
+.calculator {
+    border-top:2px solid hsl(212, 86%, 64%);
+    background-color: white;
+}
+.item {
+    border-radius: 3px;
+    padding-left: 15px;
+    padding-right: 15px;   
+}
+h1 {
+    font-weight: 300;
+    font-size: 14px;
+    color: hsl(234, 12%, 34%);
+}
+h2, h3 {
+    font-size: 14px;
+    color: hsl(234, 12%, 34%);
+    margin-bottom: -5px;
+}
+p {font-size: 10px;}
+@media (min-width: 600px) {
+    .card {
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+    }
+    .container {
+        display: grid;
+        grid-template-columns: repeat(3, 230px);
+        grid-template-rows: repeat(8, 75px);
+        height: 100vh;
+    }
+    .team-builder {
+        grid-row-start: 3;
+        grid-row-end: 5;
+        grid-column-start: 2;
+    }
+    .calculator {
+        grid-row-start: 4;
+        grid-row-end: 6;
+        grid-column-start: 3;       
+    }
+    .supervisor {
+        grid-row-start: 4;
+        grid-row-end: 6;
+    }
+    .karma {
+        grid-row-start: 5;
+        grid-row-end: 7;
+    }
+    .heading {
+        grid-column-start: 1;
+        grid-column-end: 4;
+        grid-row-start: 1;
+        grid-row-end: 2;
+        text-align: center;
+        padding-top: 40px;
+        padding-left: 120px;
+        padding-right: 120px;
+    }
+    h1, h2 {font-size: 16px;}
+    svg {
+        transform: translate(150px, 30px);    
+    }
+}
